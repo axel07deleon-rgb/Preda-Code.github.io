@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Preda Code Security Sistems</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header class="topbar">
+  <div class="brand" onclick="navigateTo('#inicio')">
+    <img src="https://i.postimg.cc/y8ySRvMQ/logo-zorro-mejorado-removebg-preview.png" alt="Preda Code Logo" />
+    <span>Preda Code Security Systems</span>
+  </div>
+  <nav class="nav">
+    <a href="#inicio" data-link>Inicio</a>
+    <a href="#nosotros" data-link>Nosotros</a>
+    <a href="#servicios" data-link>Servicios</a>
+    <a href="#ventas" data-link>Ventas</a>
+  </nav>
+</header>
+
+<main id="app">
+
+  <!-- INICIO -->
+  <section id="inicio" class="page activa" data-route="inicio" aria-labelledby="ttl-inicio">
+    <div class="hero">
+      <div class="text-content">
+        <h1 id="ttl-inicio">Preda Code Security Systems</h1>
+        <p>
+          Somos especialistas en seguridad electrónica y tecnológica. Integramos control de acceso, asistencia, videovigilancia,
+          redes y software a la medida para proteger y optimizar tus espacios.
+        </p>
+        <div class="actions">
+          <button class="btn" onclick="navigateTo('#nosotros')">Conócenos</button>
+          <button class="btn ghost" onclick="navigateTo('#servicios')">Ver Servicios</button>
+        </div>
+      </div>
+      <div class="logo-container">
+        <img src="https://i.postimg.cc/y8ySRvMQ/logo-zorro-mejorado-removebg-preview.png" alt="Logo Preda Code" />
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section id="nosotros" class="page" data-route="nosotros" aria-labelledby="ttl-nosotros">
+    <h1 id="ttl-nosotros">Sobre Nosotros</h1>
+    <img class="imagen-seccion"
+         src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=60"
+         alt="Equipo técnico colaborando en un proyecto" />
+    <div class="contenedor-texto">
+      <p>
+        En <strong>Preda Code</strong> unimos <em>ingeniería</em> y <em>servicio</em> para brindar soluciones de seguridad
+        que realmente funcionan. Nos enfocamos en entender tu operación y diseñar una implementación robusta,
+        escalable y fácil de usar.
+      </p>
+      <p>
+        Nuestro equipo está conformado por especialistas en <b>instalación</b>, <b>programación</b>, <b>mantenimiento</b> y
+        <b>ventas</b>. Acompañamos cada proyecto con asesoría, capacitación y soporte post–venta.
+      </p>
+      <ul class="bullets">
+        <li>+ Implementaciones de CCTV IP, analítica de video y almacenamiento seguro.</li>
+        <li>+ Control de acceso, asistencia y credenciales (RFID/biométrico).</li>
+        <li>+ Desarrollo web a medida, dashboards y automatización de reportes.</li>
+        <li>+ Mantenimiento preventivo/correctivo y mesa de ayuda.</li>
+      </ul>
+    </div>
+    <div class="navegacion-detalle">
+      <button class="btn" onclick="navigateTo('#servicios')">Ver Servicios</button>
+    </div>
+  </section>
+
+  <!-- SERVICIOS (lista) -->
+  <section id="servicios" class="page" data-route="servicios" aria-labelledby="ttl-servicios">
+    <h1 id="ttl-servicios">Nuestros Servicios</h1>
+    <p class="subtitle">Innovación, calidad y compromiso en cada proyecto.</p>
+
+    <div class="cards">
+      <!-- Mantenimiento -->
+      <article class="card">
+        <img src="https://i.postimg.cc/0NYV1YWS/tecnologia-pc-taller-reparacion-computadoras-ingeniero-realizando-mantenimiento-portatiles-desarroll.jpg" alt="Técnico dando mantenimiento a equipos" />
+        <h3>Mantenimiento</h3>
+        <p>
+          Mantenimiento <b>preventivo</b> y <b>correctivo</b> para cómputo, redes, CCTV y control de acceso.
+          Inventario técnico, bitácoras y reportes.
+        </p>
+        <button class="info-link" onclick="navigateTo('#detalle-mantenimiento')">Más información</button>
+      </article>
+
+      <!-- Programación -->
+      <article class="card">
+        <img src="https://i.postimg.cc/8cpPNgRS/La-importancia-de-la-programacion-segura-o-desarrollo-seguro-de-software.jpg" alt="Desarrollo de software seguro" />
+        <h3>Programación</h3>
+        <p>
+          Desarrollo de sistemas web, integraciones con hardware, tableros de control
+          y automatizaciones orientadas a procesos.
+        </p>
+        <button class="info-link" onclick="navigateTo('#detalle-programacion')">Más información</button>
+      </article>
+
+      <!-- Instalación -->
+      <article class="card">
+        <img src="https://i.postimg.cc/hG2V7NLx/camara-de-videovigilancia-900x600.jpg" alt="Cámaras de videovigilancia instaladas" />
+        <h3>Instalación</h3>
+        <p>
+          Implementación profesional de CCTV (CCTV/IP), NVR/DVR, sensores, alarmas y
+          control de acceso con puesta en marcha y capacitación.
+        </p>
+        <button class="info-link" onclick="navigateTo('#detalle-instalacion')">Más información</button>
+      </article>
+
+      <!-- Ventas (atajo) -->
+      <article class="card">
+        <img src="https://picsum.photos/seed/ventas-cover/600/400" alt="Catálogo de productos" />
+        <h3>Ventas</h3>
+        <p>Equipos y accesorios de marcas confiables. Entregas y facturación.</p>
+        <button class="info-link" onclick="navigateTo('#ventas')">Ver catálogo</button>
+      </article>
+    </div>
+
+    <div class="navegacion-detalle">
+      <button class="btn ghost" onclick="navigateTo('#inicio')">← Volver al Inicio</button>
+    </div>
+  </section>
+
+  <!-- DETALLE: MANTENIMIENTO -->
+  <section id="detalle-mantenimiento" class="page" data-route="detalle-mantenimiento" aria-labelledby="ttl-det-mant">
+    <h2 id="ttl-det-mant">Servicio de Mantenimiento</h2>
+    <img class="imagen-seccion"
+         src="https://i.postimg.cc/0NYV1YWS/tecnologia-pc-taller-reparacion-computadoras-ingeniero-realizando-mantenimiento-portatiles-desarroll.jpg"
+         alt="Mantenimiento de equipos de cómputo" />
+    <div class="contenedor-texto">
+      <p>
+        Cuidamos la salud de tu infraestructura tecnológica para evitar paros y alargar la vida útil del equipo.
+      </p>
+      <ul class="bullets">
+        <li>Diagnóstico, limpieza profunda, cambio de pasta térmica.</li>
+        <li>Actualización de firmware/OS, endurecimiento básico de seguridad.</li>
+        <li>Pruebas de rendimiento y estabilidad, informes y recomendaciones.</li>
+        <li>Planes mensuales/trimestrales con SLA y tiempos de respuesta.</li>
+      </ul>
+    </div>
+    <div class="navegacion-detalle">
+      <button class="btn" onclick="navigateTo('#servicios')">Volver a Servicios</button>
+    </div>
+  </section>
+
+  <!-- DETALLE: PROGRAMACIÓN -->
+  <section id="detalle-programacion" class="page" data-route="detalle-programacion" aria-labelledby="ttl-det-prog">
+    <h2 id="ttl-det-prog">Servicio de Programación</h2>
+    <img class="imagen-seccion"
+         src="https://i.postimg.cc/8cpPNgRS/La-importancia-de-la-programacion-segura-o-desarrollo-seguro-de-software.jpg"
+         alt="Programación segura a medida" />
+    <div class="contenedor-texto">
+      <p>
+        Desarrollamos soluciones a medida que conectan tus equipos, tus datos y tu operación:
+      </p>
+      <ul class="bullets">
+        <li>Sistemas web de asistencia, acceso y monitoreo.</li>
+        <li>Dashboards con indicadores, exportables y alertas.</li>
+        <li>Integración con biométricos, lectores RFID y NVR/DVR.</li>
+        <li>Mantenimiento evolutivo y soporte continuo.</li>
+      </ul>
+    </div>
+    <div class="navegacion-detalle">
+      <button class="btn" onclick="navigateTo('#servicios')">Volver a Servicios</button>
+    </div>
+  </section>
+
+  <!-- DETALLE: INSTALACIÓN -->
+  <section id="detalle-instalacion" class="page" data-route="detalle-instalacion" aria-labelledby="ttl-det-inst">
+    <h2 id="ttl-det-inst">Servicio de Instalación</h2>
+    <img class="imagen-seccion"
+       src="https://i.postimg.cc/hG2V7NLx/camara-de-videovigilancia-900x600.jpg"
+         alt="Cámara de videovigilancia instalada" />
+    <div class="contenedor-texto">
+      <p>
+        Instalación y puesta a punto de sistemas de seguridad con enfoque en calidad de imagen,
+        continuidad operativa y acceso remoto seguro.
+      </p>
+      <ul class="bullets">
+        <li>Cámaras bala/domo (CCTV e IP), lentes varifocales, visión nocturna.</li>
+        <li>NVR/DVR H.265+, PoE, almacenamiento local/nube y redundancia.</li>
+        <li>Videoporteros, cerraduras electrónicas, sensores y sirenas.</li>
+        <li>Capacitación al usuario, documentación y soporte post–instalación.</li>
+      </ul>
+      <div class="galeria">
+        <img src="https://picsum.photos/seed/cctv1/600/400" alt="Cámara tipo bala" />
+        <img src="https://picsum.photos/seed/cctv2/600/400" alt="Cámara tipo domo" />
+        <img src="https://picsum.photos/seed/cctv3/600/400" alt="NVR instalado" />
+      </div>
+    </div>
+    <div class="navegacion-detalle">
+      <button class="btn" onclick="navigateTo('#servicios')">Volver a Servicios</button>
+    </div>
+  </section>
+
+<!-- VENTAS / CATÁLOGO -->
+<section id="ventas" class="page" data-route="ventas" aria-labelledby="ttl-ventas">
+  <h1 id="ttl-ventas">Catálogo de Ventas</h1>
+  <p class="subtitle">El área de ventas se encarga de brindar asesoría especializada a clientes que buscan soluciones de seguridad confiables y adaptadas a sus necesidades.</p>
+
+  <div class="grid">
+    <!-- Productos existentes convertidos a quetzales -->
+    <article class="card producto">
+      <img src="https://i.postimg.cc/Dwt0T06Y/COOPER-B1-A41.jpg" />
+      <h3>Cámara Bullet 4MP</h3>
+      <p>IR 30m • IP67 • H.265+. Ideal exteriores.</p>
+      <strong>Q 615</strong>
+    </article>
+
+    <article class="card producto">
+      <img src="https://i.postimg.cc/G23CwnW5/DS-2-CE56-D0-T-IRMF.png" />
+      <h3>Cámara Domo 1080p</h3>
+      <p>IR 20m • 2.8mm • Anti-vandálica.</p>
+      <strong>Q 428</strong>
+    </article>
+
+    <article class="card producto">
+      <img src="https://i.postimg.cc/9FWpdDjh/DS7108-HQHIK1-1.png" />
+      <h3>DVR 8 Canales H.265</h3>
+      <p>Compatibilidad TVI/CVI/AHD • 4K salida HDMI.</p>
+      <strong>Q 856</strong>
+    </article>
+
+    <article class="card producto">
+      <img src="https://i.postimg.cc/zBpTGk2P/images-5.jpg" />
+      <h3>NVR 16 Canales PoE</h3>
+      <p>PoE integrado • ONVIF • Smart Search.</p>
+      <strong>Q 1470</strong>
+    </article>
+
+    <article class="card producto">
+      <img src="https://i.postimg.cc/Kzh5D8xg/4-Balas-Dahua-stratega-1.png" />
+      <h3>Kit CCTV 4 Cámaras</h3>
+      <p>Incluye DVR, cables y fuente. Plug & Play.</p>
+      <strong>Q 1548</strong>
+    </article>
+
+    <article class="card producto">
+      <img src="https://i.postimg.cc/bY9mZKBd/images-6.jpg" />
+      <h3>Kit CCTV 8 Cámaras</h3>
+      <p>Monitoreo remoto • Notificaciones móviles.</p>
+      <strong>Q 2714</strong>
+    </article>
+
+    <article class="card producto">
+      <img src="https://i.postimg.cc/nrCMsqgK/DS-KIS603-P-HIKVISION-1200x1200-1-1-526x526-500x500.jpg" />
+      <h3>Videoportero IP</h3>
+      <p>App móvil • Audio bidireccional • Snapshot.</p>
+      <strong>Q 970</strong>
+    </article>
+
+    <article class="card producto">
+      <img src="https://i.postimg.cc/VLwkPQLB/cerradura-biometrica-inteligente-para-puerta-cerradura-electronica-inteligente-con-huella-dactilar-y.jpg" />
+      <h3>Cerradura Electrónica</h3>
+      <p>PIN/RFID • Modo paso libre • Batería de respaldo.</p>
+      <strong>Q 768</strong>
+    </article>
+
+    <article class="card producto">
+      <img src="https://i.postimg.cc/cCXjznLz/images-7.jpg" />
+      <h3>Sensor de Movimiento PIR</h3>
+      <p>Alcance 12m • Inmunidad a mascotas.</p>
+      <strong>Q 171</strong>
+    </article>
+
+    <article class="card producto">
+      <img src="https://i.postimg.cc/fLFSfHxq/APC336-1.jpg" />
+      <h3>UPS 1500VA</h3>
+      <p>Onda simulada • Protección contra picos.</p>
+      <strong>Q 1044</strong>
+    </article>
+
+    <article class="card producto">
+      <img src="https://i.postimg.cc/Njfm6CSY/61-DNk-Jqm6w-L-SL1500-526x526-500x500.jpg" />
+      <h3>Router WiFi Doble Banda</h3>
+      <p>AC1200 • 5GHz + 2.4GHz • QoS básico.</p>
+      <strong>Q 302</strong>
+    </article>
+
+    <article class="card producto">
+      <img src="https://i.postimg.cc/xjgT61ZQ/wd20purz343.jpg" />
+      <h3>Disco Duro 2TB Vigilancia</h3>
+      <p>24/7 • Para NVR/DVR • Baja vibración.</p>
+      <strong>Q 502</strong>
+    </article>
+
+       <!-- ===== 15 productos corregidos + 10 nuevos ===== -->
+
+    <!-- 13  Monitor 24" 75 Hz -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/KzB7wWLK/images-8.jpg>
+      <h3>Monitor 24" 75 Hz IPS</h3>
+      <p>Full HD • HDMI • VESA • Sin bordes.</p>
+      <strong>Q 1 580</strong>
+    </article>
+
+    <!-- 14  Monitor 27" 144 Hz -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/bNW0TbsV/image.png>
+      <h3>Monitor 27" 144 Hz IPS</h3>
+      <p>QHD • FreeSync • DisplayPort • HDR400.</p>
+      <strong>Q 2 750</strong>
+    </article>
+
+    <!-- 15  Teclado mecánico RGB -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/QtYsL633/71-T1-WQSxp9-L-AC-SL1500.jpg>
+      <h3>Teclado Mecánico RGB</h3>
+      <p>Switches rojos • Anti-ghosting • Keycaps PBT.</p>
+      <strong>Q 780</strong>
+    </article>
+
+    <!-- 16  Mouse gamer 12 k DPI -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/T1Rz9WbK/M36020-BK-4.webp>
+      <h3>Mouse Gamer 12 k DPI</h3>
+      <p>RGB • Peso ajustable • Software propio.</p>
+      <strong>Q 420</strong>
+    </article>
+
+    <!-- 17  Combo teclado + mouse inalámbrico -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/zDttMMZt/0633h7t4rwem9c4gkhmp13wtng.jpg>
+      <h3>Combo Teclado + Mouse RF</h3>
+      <p>Batería 12 meses • Receptor nano USB.</p>
+      <strong>Q 250</strong>
+    </article>
+
+    <!-- 18  Cable HDMI 2.1 2 m -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/P5qzsbYt/image.png>
+      <h3>Cable HDMI 2.1 2 m</h3>
+      <p>8K/60 Hz • 48 Gbps • Nylon trenzado.</p>
+      <strong>Q 95</strong>
+    </article>
+
+    <!-- 19  Cable USB-C 100 W 1 m -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/4yzgKXcJ/cable-usb-c-de-2-m-100-w.jpg>
+      <h3>Cable USB-C 100 W 1 m</h3>
+      <p>PD 3.0 • Compatible MacBook / Android.</p>
+      <strong>Q 85</strong>
+    </article>
+
+    <!-- 20  Cable de red Cat6 305 m -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/RVBmknrq/UTPCAT6-EX-LANCABHD-1200x1200-01-500x500.jpg>
+      <h3>Cable UTP Cat6 (305 m)</h3>
+      <p>Cobre puro • Exterior • 550 MHz.</p>
+      <strong>Q 1 250</strong>
+    </article>
+
+    <!-- 21  Hub USB-C 7 puertos -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/QtRmbFyp/ARG-UB-0191-ARGOM-1200x1200-1-500x500.jpg>
+      <h3>Hub USB-C 7 Puertos</h3>
+      <p>3×USB-A • 1×HDMI 4K • 1×PD 100 W.</p>
+      <strong>Q 450</strong>
+    </article>
+
+    <!-- 22  Base refrigerante laptop -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/P52M737f/34884.jpg>
+      <h3>Base Refrigerante Laptop 17"</h3>
+      <p>5 ventiladores • USB alimentado • Ajustable.</p>
+      <strong>Q 320</strong>
+    </article>
+
+    <!-- 23  Webcam 1080p 60 fps -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/52hNt9jR/image.png>
+      <h3>Webcam 1080p 60 fps</h3>
+      <p>Autofocus • Micrófono dual • Cubre-lente.</p>
+      <strong>Q 560</strong>
+    </article>
+
+    <!-- 24  Auriculares gaming RGB -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/ZKbb9yw2/AB-D439-Audifonos-1200x1200-1-500x500.jpg>
+      <h3>Auriculares Gaming RGB</h3>
+      <p>7.1 Surround • Micrófono flexible • USB.</p>
+      <strong>Q 690</strong>
+    </article>
+
+    <!-- 25  Parlantes 2.1 40 W -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/k4zVR8pd/KWS-616.webp>
+      <h3>Parlantes 2.1 40 W</h3>
+      <p>Subwoofer • Bluetooth • Control remoto.</p>
+      <strong>Q 480</strong>
+    </article>
+
+    <!-- 26  SSD 500 GB NVMe -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/XY9QTpbN/SNV3-S-500-G-Kingston-1200x1200-1-700x700.webp>
+      <h3>SSD NVMe 500 GB</h3>
+      <p>3 500 MB/s • M.2 • 5 años garantía.</p>
+      <strong>Q 620</strong>
+    </article>
+
+    <!-- 27  Memoria RAM 16 GB DDR4 3200 -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/hv0BRRx3/A78254.webp>
+      <h3>RAM 16 GB DDR4 3200 MHz</h3>
+      <p>Kit 2×8 GB • CL16 • XMP.</p>
+      <strong>Q 1 100</strong>
+    </article>
+
+    <!-- 28  Fuente 650 W 80+ Bronze -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/yx9LsdZT/1719515555.png>
+      <h3>Fuente 650 W 80+ Bronze</h3>
+      <p>Modular • Ventilador silencioso • 5 años.</p>
+      <strong>Q 780</strong>
+    </article>
+
+    <!-- 29  Adaptador USB-C → HDMI 4K -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/fTYMgfJV/image.png>
+      <h3>Adaptador USB-C → HDMI 4K</h3>
+      <p>Plug-and-play • Aluminio • Compatible Mac/PC.</p>
+      <strong>Q 120</strong>
+    </article>
+
+    <!-- 30  Cargador portátil 20 000 mAh -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/k5GF7c6c/image.png>
+      <h3>PowerBank 20 000 mAh</h3>
+      <p>PD 65 W • 2×USB-C • LED indicador.</p>
+      <strong>Q 450</strong>
+    </article>
+
+    <!-- 31  Adaptador Wi-Fi 6 USB -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/KzMTNJLY/images-9.jpg>
+      <h3>Adaptador Wi-Fi 6 USB</h3>
+      <p>AX1800 • Antena dual • Compatible Win/Linux.</p>
+      <strong>Q 380</strong>
+    </article>
+
+    <!-- 32  Docking Station USB-C -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/vZZ6jQ9k/image.png>
+      <h3>Docking Station USB-C</h3>
+      <p>2×HDMI 4K • Ethernet • SD • 85 W PD.</p>
+      <strong>Q 1 200</strong>
+    </article>
+
+    <!-- 33  Teclado numérico externo -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/66kHzD2N/image.png>
+      <h3>Teclado Numérico USB</h3>
+      <p>Retroiluminado • Plug & Play • Ultra delgado.</p>
+      <strong>Q 110</strong>
+    </article>
+
+    <!-- 34  Mouse pad RGB grande -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/VktcztjC/image.png>
+      <h3>Mouse Pad RGB XXL</h3>
+      <p>900×400 mm • Base antideslizante • 14 efectos.</p>
+      <strong>Q 220</strong>
+    </article>
+
+    <!-- 35  Cable DisplayPort 1.4 2 m -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/SNzP9hJ0/image.png>
+      <h3>Cable DisplayPort 1.4 2 m</h3>
+      <p>8K/60 Hz • 32 Gbps • Conectores chapados en oro.</p>
+      <strong>Q 130</strong>
+    </article>
+
+    <!-- 36  Lámpara LED escritorio USB -->
+    <article class="card producto">
+     <img src=https://i.postimg.cc/VkBHJDNP/image.png>
+      <h3>Lámpara LED Escritorio USB</h3>
+      <p>3 modos • Dimmer • Brazo flexible • 5 W.</p>
+      <strong>Q 150</strong>
+    </article>
+
+    <!-- 37  Cable USB-A 3.0 1 m -->
+    <article class="card producto">
+      <img src=https://i.postimg.cc/C19bb9Q5/image.png>
+      <h3>Cable USB-A 3.0 1 m</h3>
+      <p>5 Gbps • Nylon trenzado • Blindaje doble.</p>
+      <strong>Q 65</strong>
+    </article>
+
+  <div class="navegacion-detalle">
+    <button class="btn ghost" onclick="navigateTo('#servicios')">Volver a Servicios</button>
+  </div>
+</section>
+    <div class="navegacion-detalle">
+      <button class="btn ghost" onclick="navigateTo('#servicios')">Volver a Servicios</button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  © <span id="year"></span> Preda Code Security Systems — Innovación en Seguridad
+</footer>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
