@@ -136,3 +136,17 @@ h1,h2,h3{text-align:center}
   .hero{flex-direction:column; text-align:center}
   .actions{justify-content:center}
 }
+/* ===== AJUSTES RESPONSIVOS EXTRA ===== */
+
+/* Fuerza imágenes y videos flexibles */
+img,video{max-width:100%;height:auto}
+
+/* Contenedor principal que se adapta */
+.container{max-width:100%;padding:1rem}
+@media(min-width:768px){.container{max-width:1200px;margin:0 auto;padding:2rem}}
+
+/* Topbar que se apila en móvil */
+@media(max-width:600px){
+  .topbar{flex-direction:column;align-items:flex-start}
+  .nav{display:flex;flex-wrap:wrap;gap:.5rem}
+}
