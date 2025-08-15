@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Preda Code Security Sistems</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
+<!-- BARRA FIJA -->
 <header class="topbar">
   <div class="brand" onclick="navigateTo('#inicio')">
-    <img src="https://i.postimg.cc/y8ySRvMQ/logo-zorro-mejorado-removebg-preview.png" alt="Preda Code Logo" />
+    <img src="https://i.postimg.cc/y8ySRvMQ/logo-zorro-mejorado-removebg-preview.png" alt="Logo"/>
     <span>Preda Code Security Systems</span>
   </div>
   <nav class="nav">
@@ -21,202 +12,144 @@
   </nav>
 </header>
 
+<!-- CONTENIDO PÁGINAS -->
 <main id="app">
-
   <!-- INICIO -->
-  <section id="inicio" class="page activa" data-route="inicio" aria-labelledby="ttl-inicio">
+  <section id="inicio" class="page activa" data-route="inicio">
     <div class="hero">
       <div class="text-content">
-        <h1 id="ttl-inicio">Preda Code Security Systems</h1>
+        <h1>Preda Code Security Systems</h1>
         <p>
-          Somos especialistas en seguridad electrónica y tecnológica. Integramos control de acceso, asistencia, videovigilancia,
-          redes y software a la medida para proteger y optimizar tus espacios.
+          Somos especialistas en seguridad electrónica y tecnológica. Integramos control de acceso,
+          asistencia, videovigilancia, redes y software a la medida para proteger y optimizar tus espacios.
         </p>
-        <div class="actions">
-          <button class="btn" onclick="navigateTo('#nosotros')">Conócenos</button>
-          <button class="btn ghost" onclick="navigateTo('#servicios')">Ver Servicios</button>
-        </div>
       </div>
       <div class="logo-container">
-        <img src="https://i.postimg.cc/y8ySRvMQ/logo-zorro-mejorado-removebg-preview.png" alt="Logo Preda Code" />
+        <img src="https://i.postimg.cc/y8ySRvMQ/logo-zorro-mejorado-removebg-preview.png" alt="Logo"/>
       </div>
     </div>
   </section>
 
   <!-- NOSOTROS -->
-  <section id="nosotros" class="page" data-route="nosotros" aria-labelledby="ttl-nosotros">
-    <h1 id="ttl-nosotros">Sobre Nosotros</h1>
+  <section id="nosotros" class="page" data-route="nosotros">
+    <h1>Sobre Nosotros</h1>
     <img class="imagen-seccion"
          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=60"
-         alt="Equipo técnico colaborando en un proyecto" />
+         alt="Equipo técnico"/>
     <div class="contenedor-texto">
       <p>
         En <strong>Preda Code</strong> unimos <em>ingeniería</em> y <em>servicio</em> para brindar soluciones de seguridad
-        que realmente funcionan. Nos enfocamos en entender tu operación y diseñar una implementación robusta,
-        escalable y fácil de usar.
-      </p>
-      <p>
-        Nuestro equipo está conformado por especialistas en <b>instalación</b>, <b>programación</b>, <b>mantenimiento</b> y
-        <b>ventas</b>. Acompañamos cada proyecto con asesoría, capacitación y soporte post–venta.
+        que realmente funcionan. Diseñamos implementaciones robustas, escalables y fáciles de usar.
       </p>
       <ul class="bullets">
-        <li>+ Implementaciones de CCTV IP, analítica de video y almacenamiento seguro.</li>
-        <li>+ Control de acceso, asistencia y credenciales (RFID/biométrico).</li>
-        <li>+ Desarrollo web a medida, dashboards y automatización de reportes.</li>
-        <li>+ Mantenimiento preventivo/correctivo y mesa de ayuda.</li>
+        <li>CCTV IP, analítica de video y almacenamiento seguro.</li>
+        <li>Control de acceso, asistencia y credenciales.</li>
+        <li>Desarrollo web a medida y automatización de reportes.</li>
+        <li>Mantenimiento preventivo/correctivo y mesa de ayuda.</li>
       </ul>
-    </div>
-    <div class="navegacion-detalle">
-      <button class="btn" onclick="navigateTo('#servicios')">Ver Servicios</button>
     </div>
   </section>
 
-  <!-- SERVICIOS (lista) -->
-  <section id="servicios" class="page" data-route="servicios" aria-labelledby="ttl-servicios">
-    <h1 id="ttl-servicios">Nuestros Servicios</h1>
+  <!-- SERVICIOS -->
+  <section id="servicios" class="page" data-route="servicios">
+    <h1>Nuestros Servicios</h1>
     <p class="subtitle">Innovación, calidad y compromiso en cada proyecto.</p>
 
     <div class="cards">
-      <!-- Mantenimiento -->
       <article class="card">
-        <img src="https://i.postimg.cc/0NYV1YWS/tecnologia-pc-taller-reparacion-computadoras-ingeniero-realizando-mantenimiento-portatiles-desarroll.jpg" alt="Técnico dando mantenimiento a equipos" />
+        <img src="https://i.postimg.cc/0NYV1YWS/tecnologia-pc-taller-reparacion-computadoras-ingeniero-realizando-mantenimiento-portatiles-desarroll.jpg"
+             alt="Mantenimiento"/>
         <h3>Mantenimiento</h3>
-        <p>
-          Mantenimiento <b>preventivo</b> y <b>correctivo</b> para cómputo, redes, CCTV y control de acceso.
-          Inventario técnico, bitácoras y reportes.
-        </p>
+        <p>Preventivo y correctivo para cómputo, redes y CCTV con reportes.</p>
         <button class="info-link" onclick="navigateTo('#detalle-mantenimiento')">Más información</button>
       </article>
 
-      <!-- Programación -->
       <article class="card">
-        <img src="https://i.postimg.cc/8cpPNgRS/La-importancia-de-la-programacion-segura-o-desarrollo-seguro-de-software.jpg" alt="Desarrollo de software seguro" />
+        <img src="https://i.postimg.cc/8cpPNgRS/La-importancia-de-la-programacion-segura-o-desarrollo-seguro-de-software.jpg"
+             alt="Programación"/>
         <h3>Programación</h3>
-        <p>
-          Desarrollo de sistemas web, integraciones con hardware, tableros de control
-          y automatizaciones orientadas a procesos.
-        </p>
+        <p>Desarrollo web, dashboards y automatización de procesos.</p>
         <button class="info-link" onclick="navigateTo('#detalle-programacion')">Más información</button>
       </article>
 
-      <!-- Instalación -->
       <article class="card">
-        <img src="https://i.postimg.cc/hG2V7NLx/camara-de-videovigilancia-900x600.jpg" alt="Cámaras de videovigilancia instaladas" />
+        <img src="https://i.postimg.cc/hG2V7NLx/camara-de-videovigilancia-900x600.jpg"
+             alt="Instalación"/>
         <h3>Instalación</h3>
-        <p>
-          Implementación profesional de CCTV (CCTV/IP), NVR/DVR, sensores, alarmas y
-          control de acceso con puesta en marcha y capacitación.
-        </p>
+        <p>CCTV IP, control de acceso, alarmas y capacitación.</p>
         <button class="info-link" onclick="navigateTo('#detalle-instalacion')">Más información</button>
       </article>
 
-      <!-- Ventas (atajo) -->
       <article class="card">
-        <img src="https://picsum.photos/seed/ventas-cover/600/400" alt="Catálogo de productos" />
+        <img src="https://picsum.photos/seed/ventas-cover/600/400" alt="Catálogo"/>
         <h3>Ventas</h3>
-        <p>Equipos y accesorios de marcas confiables. Entregas y facturación.</p>
+        <p>Equipos y accesorios de marcas confiables.</p>
         <button class="info-link" onclick="navigateTo('#ventas')">Ver catálogo</button>
       </article>
     </div>
-
-    <div class="navegacion-detalle">
-      <button class="btn ghost" onclick="navigateTo('#inicio')">← Volver al Inicio</button>
-    </div>
   </section>
 
-  <!-- DETALLE: MANTENIMIENTO -->
-  <section id="detalle-mantenimiento" class="page" data-route="detalle-mantenimiento" aria-labelledby="ttl-det-mant">
-    <h2 id="ttl-det-mant">Servicio de Mantenimiento</h2>
+  <!-- DETALLE MANTENIMIENTO -->
+  <section id="detalle-mantenimiento" class="page" data-route="detalle-mantenimiento">
+    <h2>Servicio de Mantenimiento</h2>
     <img class="imagen-seccion"
          src="https://i.postimg.cc/0NYV1YWS/tecnologia-pc-taller-reparacion-computadoras-ingeniero-realizando-mantenimiento-portatiles-desarroll.jpg"
-         alt="Mantenimiento de equipos de cómputo" />
+         alt="Mantenimiento"/>
     <div class="contenedor-texto">
-      <p>
-        Cuidamos la salud de tu infraestructura tecnológica para evitar paros y alargar la vida útil del equipo.
-      </p>
+      <p>Cuidamos la salud de tu infraestructura para evitar paros y alargar la vida útil del equipo.</p>
       <ul class="bullets">
-        <li>Diagnóstico, limpieza profunda, cambio de pasta térmica.</li>
-        <li>Actualización de firmware/OS, endurecimiento básico de seguridad.</li>
-        <li>Pruebas de rendimiento y estabilidad, informes y recomendaciones.</li>
-        <li>Planes mensuales/trimestrales con SLA y tiempos de respuesta.</li>
+        <li>Diagnóstico, limpieza profunda y cambio de pasta térmica.</li>
+        <li>Actualización de firmware/OS y endurecimiento básico.</li>
+        <li>Planes mensuales/trimestrales con SLA.</li>
       </ul>
-    </div>
-    <div class="navegacion-detalle">
-      <button class="btn" onclick="navigateTo('#servicios')">Volver a Servicios</button>
     </div>
   </section>
 
-  <!-- DETALLE: PROGRAMACIÓN -->
-  <section id="detalle-programacion" class="page" data-route="detalle-programacion" aria-labelledby="ttl-det-prog">
-    <h2 id="ttl-det-prog">Servicio de Programación</h2>
+  <!-- DETALLE PROGRAMACIÓN -->
+  <section id="detalle-programacion" class="page" data-route="detalle-programacion">
+    <h2>Servicio de Programación</h2>
     <img class="imagen-seccion"
          src="https://i.postimg.cc/8cpPNgRS/La-importancia-de-la-programacion-segura-o-desarrollo-seguro-de-software.jpg"
-         alt="Programación segura a medida" />
+         alt="Programación"/>
     <div class="contenedor-texto">
-      <p>
-        Desarrollamos soluciones a medida que conectan tus equipos, tus datos y tu operación:
-      </p>
+      <p>Desarrollamos soluciones a medida que conectan tus equipos, tus datos y tu operación.</p>
       <ul class="bullets">
-        <li>Sistemas web de asistencia, acceso y monitoreo.</li>
-        <li>Dashboards con indicadores, exportables y alertas.</li>
-        <li>Integración con biométricos, lectores RFID y NVR/DVR.</li>
-        <li>Mantenimiento evolutivo y soporte continuo.</li>
+        <li>Sistemas web de asistencia y monitoreo.</li>
+        <li>Dashboards con indicadores y alertas.</li>
+        <li>Integración con biométricos y NVR/DVR.</li>
       </ul>
-    </div>
-    <div class="navegacion-detalle">
-      <button class="btn" onclick="navigateTo('#servicios')">Volver a Servicios</button>
     </div>
   </section>
 
-  <!-- DETALLE: INSTALACIÓN -->
-  <section id="detalle-instalacion" class="page" data-route="detalle-instalacion" aria-labelledby="ttl-det-inst">
-    <h2 id="ttl-det-inst">Servicio de Instalación</h2>
+  <!-- DETALLE INSTALACIÓN -->
+  <section id="detalle-instalacion" class="page" data-route="detalle-instalacion">
+    <h2>Servicio de Instalación</h2>
     <img class="imagen-seccion"
-       src="https://i.postimg.cc/hG2V7NLx/camara-de-videovigilancia-900x600.jpg"
-         alt="Cámara de videovigilancia instalada" />
+         src="https://i.postimg.cc/hG2V7NLx/camara-de-videovigilancia-900x600.jpg"
+         alt="Instalación"/>
     <div class="contenedor-texto">
-      <p>
-        Instalación y puesta a punto de sistemas de seguridad con enfoque en calidad de imagen,
-        continuidad operativa y acceso remoto seguro.
-      </p>
+      <p>Implementación profesional de sistemas de seguridad con calidad de imagen y continuidad operativa.</p>
       <ul class="bullets">
-        <li>Cámaras bala/domo (CCTV e IP), lentes varifocales, visión nocturna.</li>
-        <li>NVR/DVR H.265+, PoE, almacenamiento local/nube y redundancia.</li>
-        <li>Videoporteros, cerraduras electrónicas, sensores y sirenas.</li>
-        <li>Capacitación al usuario, documentación y soporte post–instalación.</li>
+        <li>Cámaras bala/domo, NVR/DVR, PoE y visión nocturna.</li>
+        <li>Videoporteros, cerraduras electrónicas y sensores.</li>
+        <li>Capacitación, documentación y soporte post-instalación.</li>
       </ul>
-      <div class="galeria">
-        <img src="https://picsum.photos/seed/cctv1/600/400" alt="Cámara tipo bala" />
-        <img src="https://picsum.photos/seed/cctv2/600/400" alt="Cámara tipo domo" />
-        <img src="https://picsum.photos/seed/cctv3/600/400" alt="NVR instalado" />
-      </div>
-    </div>
-    <div class="navegacion-detalle">
-      <button class="btn" onclick="navigateTo('#servicios')">Volver a Servicios</button>
     </div>
   </section>
 
-<!-- VENTAS / CATÁLOGO -->
-<section id="ventas" class="page" data-route="ventas" aria-labelledby="ttl-ventas">
-  <h1 id="ttl-ventas">Catálogo de Ventas</h1>
-  <p class="subtitle">El área de ventas se encarga de brindar asesoría especializada a clientes que buscan soluciones de seguridad confiables y adaptadas a sus necesidades.</p>
+  <!-- VENTAS / CATÁLOGO -->
+  <section id="ventas" class="page" data-route="ventas">
+    <h1>Catálogo de Ventas</h1>
+    <p class="subtitle">Asesoría y equipos de seguridad y cómputo con precios en quetzales.</p>
 
-  <div class="grid">
-    <!-- Productos existentes convertidos a quetzales -->
-    <article class="card producto">
-      <img src="https://i.postimg.cc/Dwt0T06Y/COOPER-B1-A41.jpg" />
-      <h3>Cámara Bullet 4MP</h3>
-      <p>IR 30m • IP67 • H.265+. Ideal exteriores.</p>
-      <strong>Q 615</strong>
-    </article>
-
-    <article class="card producto">
-      <img src="https://i.postimg.cc/G23CwnW5/DS-2-CE56-D0-T-IRMF.png" />
-      <h3>Cámara Domo 1080p</h3>
-      <p>IR 20m • 2.8mm • Anti-vandálica.</p>
-      <strong>Q 428</strong>
-    </article>
-
+    <div class="grid">
+      <article class="card producto">
+        <img src="https://i.postimg.cc/Dwt0T06Y/COOPER-B1-A41.jpg" alt="Cámara Bullet"/>
+        <h3>Cámara Bullet 4MP</h3>
+        <p>IR 30 m • IP67 • H.265+</p>
+        <strong>Q 615</strong>
+      </article>
+     
     <article class="card producto">
       <img src="https://i.postimg.cc/9FWpdDjh/DS7108-HQHIK1-1.png" />
       <h3>DVR 8 Canales H.265</h3>
@@ -488,16 +421,7 @@
       <p>5 Gbps • Nylon trenzado • Blindaje doble.</p>
       <strong>Q 65</strong>
     </article>
-
-  <div class="navegacion-detalle">
-    <button class="btn ghost" onclick="navigateTo('#servicios')">Volver a Servicios</button>
-  </div>
 </section>
-    <div class="navegacion-detalle">
-      <button class="btn ghost" onclick="navigateTo('#servicios')">Volver a Servicios</button>
-    </div>
-  </section>
-
 </main>
 
 <footer class="footer">
@@ -507,4 +431,27 @@
   <script  src="./script.js"></script>
 
 </body>
-</html>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  © <span id="year"></span> Preda Code Security Systems — Innovación en Seguridad
+</footer>
+
+<script>
+/* Navegación SPA */
+function navigateTo(hash) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('activa'));
+  const target = document.querySelector(hash);
+  if (target) target.classList.add('activa');
+  history.pushState(null, null, hash);
+}
+document.addEventListener('click', e => {
+  if (e.target.matches('[data-link]')) {
+    e.preventDefault();
+    navigateTo(e.target.getAttribute('href'));
+  }
+});
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
